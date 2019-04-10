@@ -1,4 +1,4 @@
-//index.js
+//self.js
 //获取应用实例
 const app = getApp()
 
@@ -17,7 +17,7 @@ Page({
   },
   onShow: function () {
     wx.setTabBarStyle({
-      backgroundColor: '#D99F9F'
+      backgroundColor: '#EDF2DB'
     });
   },
   onLoad: function () {

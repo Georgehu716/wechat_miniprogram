@@ -1,6 +1,8 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/store/store",
+    "pages/self/self",
     "pages/logs/logs"
   ],
   "window":{
@@ -19,16 +21,16 @@
         "selectedIconPath": "images/icon_home_fixed.png"
       },
       {
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/store/store",
         "text": "商店",
-        "iconPath": "images/icon_self.png",
-        "selectedIconPath": "images/icon_self_fixed.png"
-      },
-      {
-        "pagePath": "pages/logs/logs",
-        "text": "个人",
         "iconPath": "images/icon_store.png",
         "selectedIconPath": "images/icon_store_fixed.png"
+      },
+      {
+        "pagePath": "pages/self/self",
+        "text": "个人",
+        "iconPath": "images/icon_self.png",
+        "selectedIconPath": "images/icon_self_fixed.png"
       }
     ]
   }
