@@ -1,14 +1,23 @@
 <!--index.wxml-->
-<view class="headbar">
+<view class="headbar" style="background:{{IsIndex?'#D99F9F':'#D2E5E9'}};">
   <view class="headbar_white">
-    <button class="{{IsIndex?'headbar_button headbar_chosen':'headbar_button'}}" style="left:24px;" bindtap="{{IsIndex?'':'IndexSwitch'}}">
+    <button class="{{IsIndex?'headbar_button headbar_index':'headbar_button'}}" style="left:24px;" bindtap="{{IsIndex?'':'IndexSwitch'}}">
       戏塘本塘
     </button>
-    <button class="{{IsIndex?'headbar_button':'headbar_button headbar_chosen'}}" style="right:24px;" bindtap="{{IsIndex?'IndexSwitch':''}}">
+    <button class="{{IsIndex?'headbar_button':'headbar_button headbar_vote'}}" style="right:24px;" bindtap="{{IsIndex?'IndexSwitch':''}}">
       小店票选
     </button>
   </view>
+  <view style='position:absolute;top:44px;margin-left:30px;'>
+    <button class="order_way">最近</button>
+    <button class="order_way">评分</button>
+    <button class="order_way">塘外时序</button>
+    <button class="order_way">塘外分序</button>
+  </view>
 </view>
 <view class="body">
-
+  <view class="index">
+  </view>
+  <view class="vote">
+  </view>
 </view>

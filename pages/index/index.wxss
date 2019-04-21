@@ -4,7 +4,7 @@
   height: 85rpx;
   opacity: 1;
   background: rgba(217,159,159,1);
-  box-shadow: 0px 3rpx 6rpx 0px rgba(0,0,0,0.16);
+  box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
 }
 .headbar_white {
   width: 90%;
@@ -13,10 +13,11 @@
   left: 50%;
   opacity: 1;
   background: rgba(255,255,255,1);
-  box-shadow: 0px 3rpx 6rpx 0px rgba(0,0,0,0.16);
+  box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
   transform: translateX(-50%);
   border: solid 0;
   border-radius: 5px;
+  z-index:1;
 }
 .headbar_button {
   position: absolute;
@@ -33,7 +34,26 @@
   line-height:unset;
   border-radius:30px;
 }
-.headbar_chosen {
+.headbar_index {
   background:rgba(238,131,131,1);
   color:white;
+}
+.headbar_vote {
+  background:rgba(150,183,175,1);
+  color:white;
+}
+.order_way {
+  background: rgba(247,245,245,1);
+  color: rgba(0,0,0,1);
+  box-shadow:0px 3px 6px 0px rgba(0,0,0,0.16);
+  display:inline;
+  font-size:14px;
+  padding-top:5px;
+  padding-bottom:3px;
+  padding-left:10px;
+  padding-right:10px;
+  margin:0px 3px;
+}
+.order_index {
+  background:rgba(252,220,220,1);
 }

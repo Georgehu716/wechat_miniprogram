@@ -22,7 +22,28 @@ Page({
     });
   },
   IndexSwitch: function () {
-    var num = (this.data.IsIndex + 1) % 2;
+    var is = this.data.IsIndex;
+    if (is==1)
+    {
+      wx.setNavigationBarColor({
+        frontColor: '#000000',
+        backgroundColor: '#D2E5E9'
+      });
+      wx.setTabBarStyle({
+        backgroundColor: '#D2E5E9'
+      });
+    }
+    else
+    {
+      wx.setNavigationBarColor({
+        frontColor: '#000000',
+        backgroundColor: '#D99F9F'
+      });
+      wx.setTabBarStyle({
+        backgroundColor: '#D99F9F'
+      });
+    }
+    var num = (is + 1) % 2;
     this.setData({
       IsIndex: num
     });
