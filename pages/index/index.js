@@ -4,10 +4,7 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    IsIndex: 1
   },
   //事件处理函数
   bindViewTap: function() {
@@ -22,6 +19,12 @@ Page({
     });
     wx.setTabBarStyle({
       backgroundColor: '#D99F9F'
+    });
+  },
+  IndexSwitch: function () {
+    var num = (this.data.IsIndex + 1) % 2;
+    this.setData({
+      IsIndex: num
     });
   }
 })

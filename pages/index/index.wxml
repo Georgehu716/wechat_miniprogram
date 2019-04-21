@@ -1,5 +1,14 @@
 <!--index.wxml-->
 <view class="headbar">
   <view class="headbar_white">
+    <button class="{{IsIndex?'headbar_button headbar_chosen':'headbar_button'}}" style="left:24px;" bindtap="{{IsIndex?'':'IndexSwitch'}}">
+      戏塘本塘
+    </button>
+    <button class="{{IsIndex?'headbar_button':'headbar_button headbar_chosen'}}" style="right:24px;" bindtap="{{IsIndex?'IndexSwitch':''}}">
+      小店票选
+    </button>
   </view>
+</view>
+<view class="body">
+
 </view>

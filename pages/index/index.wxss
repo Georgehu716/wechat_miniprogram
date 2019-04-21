@@ -8,13 +8,32 @@
 }
 .headbar_white {
   width: 90%;
-  height: 46px;
+  height: 50px;
   position: absolute; 
   left: 50%;
   opacity: 1;
   background: rgba(255,255,255,1);
-  box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+  box-shadow: 0px 3rpx 6rpx 0px rgba(0,0,0,0.16);
   transform: translateX(-50%);
   border: solid 0;
   border-radius: 5px;
+}
+.headbar_button {
+  position: absolute;
+  width: 145px;
+  height: 26px;
+  opacity: 1;
+  background: rgba(238,131,131,1);
+  box-shadow:0px 1px 1px 1px rgba(0,0,0,0.16);
+  float: left;
+  display: inline;
+  margin-top:12px; 
+  background:rgba(239,240,240,0.99);
+  color:#888;
+  line-height:unset;
+  border-radius:30px;
+}
+.headbar_chosen {
+  background:rgba(238,131,131,1);
+  color:white;
 }
