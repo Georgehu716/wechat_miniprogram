@@ -1,22 +1,38 @@
 <!--index.wxml-->
+<wxs src="tools.wxs" module="tools" />
 <view class="headbar" style="background:{{IsIndex?'#D99F9F':'#D2E5E9'}};">
   <view class="headbar_white">
-    <button class="{{IsIndex?'headbar_button headbar_index':'headbar_button'}}" style="left:24px;" bindtap="{{IsIndex?'':'IndexSwitch'}}">
+    <button class="headbar_button{{IsIndex?' headbar_index':''}}" style="left:24px;" bindtap="{{IsIndex?'':'IndexSwitch'}}">
       戏塘本塘
     </button>
-    <button class="{{IsIndex?'headbar_button':'headbar_button headbar_vote'}}" style="right:24px;" bindtap="{{IsIndex?'IndexSwitch':''}}">
+    <button class="headbar_button{{IsIndex?'':' headbar_vote'}}" style="right:24px;" bindtap="{{IsIndex?'IndexSwitch':''}}">
       小店票选
     </button>
   </view>
-  <view style='position:absolute;top:44px;margin-left:30px;'>
-    <button class="order_way">最近</button>
-    <button class="order_way">评分</button>
-    <button class="order_way">塘外时序</button>
-    <button class="order_way">塘外分序</button>
+  <view class="{{IsIndex?'order_index_box':'order_vote_box'}}">
+    <button class="order_way{{OrderI==0?' order_index':''}}" hidden="{{IsIndex?false:true}}" bindtap="{{OrderI==0?'':'SetOrderI'}}" data-order="0">最近</button>
+    <button class="order_way{{OrderI==1?' order_index':''}}" hidden="{{IsIndex?false:true}}" bindtap="{{OrderI==1?'':'SetOrderI'}}" data-order="1">评分</button>
+    <button class="order_way{{OrderI==2?' order_index':''}}" hidden="{{IsIndex?false:true}}" bindtap="{{OrderI==2?'':'SetOrderI'}}" data-order="2">塘外时序</button>
+    <button class="order_way{{OrderI==3?' order_index':''}}" hidden="{{IsIndex?false:true}}" bindtap="{{OrderI==3?'':'SetOrderI'}}" data-order="3">塘外分序</button>
+    <button class="order_way{{OrderV==0?' order_vote':''}}" hidden="{{IsIndex?true:false}}" bindtap="{{OrderV==0?'':'SetOrderV'}}" data-order="0">最近</button>
+    <button class="order_way{{OrderV==1?' order_vote':''}}" hidden="{{IsIndex?true:false}}" bindtap="{{OrderV==1?'':'SetOrderV'}}" data-order="1">票数</button>
+    <button class="order_way{{OrderV==2?' order_vote':''}}" hidden="{{IsIndex?true:false}}" bindtap="{{OrderV==2?'':'SetOrderV'}}" data-order="2">入选历史</button>
   </view>
 </view>
 <view class="body">
   <view class="index">
+    <block wx:for="{{Articles}}" wx:for-item="item" wx:key="index">
+      <view class="items" style="background:{{colorArr[(Timestamp+item.Id*3)%5]}}">
+        <image class="ItemImg" src="{{item.Img}}"></image>
+        <view class="ItemWords">
+          <view class="ItemTitle">{{item.Title}}</view>
+          <view class="ItemDetail">{{tools.sub(item.Detail)}}</view>
+          <view class="ItemCommentNum">评论 {{item.CommentNum}}</view>
+          <view class="ItemDate">{{tools.date(item.Date,Timestamp)}}</view>
+        </view>
+        <view class="ItemGrade">{{item.Grade}}</view>
+      </view>
+    </block>
   </view>
   <view class="vote">
   </view>

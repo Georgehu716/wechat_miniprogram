@@ -1,0 +1,43 @@
+var sub = function (val) {
+  if (val.length == 0 || val == undefined) {
+    return;
+  }
+  if (val.length > 32) {
+    return val.substring(0, 32) + "......";
+  } else {
+    return val;
+  }
+}
+var date = function (val, Timevalue) {
+  timestamp = parseInt(Timevalue);
+  var realDate = getDate(timestamp);
+  var realY = realDate.getFullYear();
+  var realM = (realDate.getMonth() + 1 < 10 ? '0' + (realDate.getMonth() + 1) : realDate.getMonth() + 1);
+  var realD = realDate.getDate() < 10 ? '0' + realDate.getDate() : realDate.getDate();
+  var realh = realDate.getHours();
+  var realm = realDate.getMinutes();
+  var passDate = getDate(parseInt(val)*1000);
+  var passY = passDate.getFullYear();
+  var passM = (passDate.getMonth() + 1 < 10 ? '0' + (passDate.getMonth() + 1) : passDate.getMonth() + 1);
+  var passD = passDate.getDate() < 10 ? '0' + passDate.getDate() : passDate.getDate();
+  var passh = passDate.getHours();
+  var passm = passDate.getMinutes();
+  if (realY == passY && realM == passM && realD == passD)
+  {
+    return (parseInt(realh) - parseInt(passh))  + "小时前";
+  }
+  else if (realY == passY && realM == passM && (parseInt(realD) - parseInt(passD)) == 1)
+  {
+    return "昨天";
+  }
+  else if (realY == passY)
+  {
+    return passM + '-' + passD;
+  }
+  else
+  {
+    return passY + '-' + passM + '-' + passD;
+  }
+}
+module.exports.sub = sub;
+module.exports.date = date;
