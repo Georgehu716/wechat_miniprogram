@@ -110,7 +110,7 @@
 }
 .ItemGrade {
   position:absolute;
-  transform:translateY(-148px);
+  transform:translateY(-124px);
   left:80%;
   color:#FCDD79;
   font-size:18px;
