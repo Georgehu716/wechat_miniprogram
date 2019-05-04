@@ -13,17 +13,23 @@ Page({
       '#EF938F',
       '#E29C9C',
       '#EA9797',
-      '#E48B8B'
+      '#E48B8B',
+      '#E3EEF1',
+      '#F2F2F2',
+      '#E7F7F9',
+      '#EEF1F6',
+      '#E8F0FF'
     ],
     Articles: [
       {
         Id: "1",
-        Title: "咸鸭蛋",
+        Title: "咸鸭蛋阿斯顿得到的发送到发斯蒂啊啊啊啊芬",
         Detail: "咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸咸",
         Img: "img/article1.jpg",
         Grade: "9.2",
         Date: "1556006921",
-        CommentNum: "233"
+        CommentNum: "233",
+        Votes: "3365",
       },
       {
         Id: "2",
@@ -32,7 +38,8 @@ Page({
         Img: "img/article2.jpg",
         Grade: "7.8",
         Date: "1556002921",
-        CommentNum: "332"
+        CommentNum: "332",
+        Votes: "365",
       },
       {
         Id: "3",
@@ -41,7 +48,8 @@ Page({
         Img: "img/article3.jpg",
         Grade: "6.6",
         Date: "1555902921",
-        CommentNum: "322"
+        CommentNum: "322",
+        Votes: "335",
       },
       {
         Id: "4",
@@ -50,7 +58,8 @@ Page({
         Img: "img/article4.jpg",
         Grade: "8.4",
         Date: "1555702921",
-        CommentNum: "223"
+        CommentNum: "223",
+        Votes: "35",
       },
       {
         Id: "5",
@@ -59,7 +68,8 @@ Page({
         Img: "img/article4.jpg",
         Grade: "8.4",
         Date: "1545702921",
-        CommentNum: "223"
+        CommentNum: "223",
+        Votes: "3365",
       },
       {
         Id: "6",
@@ -68,7 +78,8 @@ Page({
         Img: "img/article4.jpg",
         Grade: "8.4",
         Date: "1555702921",
-        CommentNum: "223"
+        CommentNum: "223",
+        Votes: "336",
       },
       {
         Id: "7",
@@ -77,7 +88,8 @@ Page({
         Img: "img/article4.jpg",
         Grade: "8.4",
         Date: "1555702921",
-        CommentNum: "223"
+        CommentNum: "223",
+        Votes: "65",
       }
     ]
   },

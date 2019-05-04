@@ -34,6 +34,19 @@
       </view>
     </block>
   </view>
+  <!--
   <view class="vote">
+    <block wx:for="{{Articles}}" wx:for-item="item" wx:key="index">
+      <view class="votes" style="background:{{colorArr[(Timestamp+item.Id*3)%5+5]}}">
+      <image class="VoteImg" src="{{item.Img}}"></image>
+        <view class="VoteWords">
+          <view class="VoteTitle">{{item.Title}}</view>
+          <view class="ItemDetail">{{tools.sub(item.Detail)}}</view>
+          <view class="ItemCommentNum">评论 {{item.CommentNum}}</view>
+          <view class="ItemDate">{{tools.date(item.Date,Timestamp)}}</view>
+        </view>
+      </view>
+    </block>
   </view>
+  -->
 </view>

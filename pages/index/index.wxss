@@ -23,7 +23,7 @@
 }
 .headbar_button {
   position: absolute;
-  width: 145px;
+  width: 130px;
   height: 26px;
   opacity: 1;
   box-shadow:0px 1px 1px 1px rgba(0,0,0,0.16);
@@ -96,7 +96,7 @@
 .ItemWords {
   margin-left:92px;
   transform:translateY(-80px);
-  width:57%;
+  width:57.5%;
 }
 .ItemTitle {
   color:white;
@@ -105,27 +105,38 @@
 }
 .ItemDetail {
   color:white;
-  font-size:12px;
-  margin-top:10px;
+  font-size:22rpx;
+  position:fixed;
+  top:43px;
 }
 .ItemGrade {
   position:absolute;
-  transform:translateY(-124px);
+  transform:translateY(-182px);
   left:80%;
   color:#FCDD79;
   font-size:18px;
 }
 .ItemDate {
-  font-size:10px;
-  margin-top:2px;
-  position:absolute;
+  font-size:9px;
+  position:fixed;
   left:20%;
   color:#736E6E;
+  top:72px;
 }
 .ItemCommentNum {
-  font-size:10px;
-  margin-top:2px;
-  position:absolute;
+  font-size:9px;
+  position:fixed;
   left:60%;
   color:#736E6E;
+  top:72px;
+}
+.votes {
+  margin-left:8px;
+  margin-bottom:5px;
+  margin-right:8px;
+  border-radius:200px 0px 0px 200px;
+  height:100px;
+  width:90%;
+  box-shadow:0px 3px 6px 0px rgba(0,0,0,0.16);
+  z-index: -1;
 }
