@@ -1,1 +1,71 @@
 /**self.wxss**/
+.container {
+  background: #EDF2DB;
+  height: 774rpx;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 150rpx;
+}
+
+.userinfo-avatar {
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #000000;
+}
+
+/* 身份认证 */
+.identity {
+  height: 400rpx;
+  width: 500rpx;
+  position: absolute;
+  top: 540rpx;
+}
+.identity button {
+  height: 48rpx;
+  width: 330rpx;
+  margin-top: 22rpx;
+  background: #FFFFFF;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  border-radius: 48rpx;
+  
+  /* 字体 */
+  font-size: 32rpx;
+  font-family: Segoe UI;
+  line-height: 40rpx;
+  color: rgba(118, 100, 11, 1);
+}
+
+/* 装饰盒 */
+.v1 {
+  background: #F7F5F5;
+  height: 792rpx;
+  width: 330rpx;
+  position: absolute;
+  top: 250rpx;
+  left: 30rpx;
+  z-index: -1;
+  opacity: 1;
+  box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.16);
+  border-radius: 40rpx;
+}
+.v2 {
+  background: #F7F5F5;
+  height: 792rpx;
+  width: 330rpx;
+  position: absolute;
+  top: 250rpx;
+  left: 400rpx;
+  z-index: -1;
+  opacity: 1;
+  box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.16);
+  border-radius: 40rpx;
+}
