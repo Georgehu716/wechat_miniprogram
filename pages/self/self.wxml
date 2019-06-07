@@ -9,7 +9,7 @@
   </view>
   <view class="identity">
     <button>个人</button>
-    <button>商店</button>
+    <button bindtap="">商店</button>
     <button>管理员</button>
   </view>
   <view class="v1"></view>

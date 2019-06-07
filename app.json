@@ -6,6 +6,7 @@
     "pages/logs/logs"
   ],
   "window":{
+    "navigationStyle": "custom",
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#D99F9F",
     "navigationBarTextStyle":"black"
