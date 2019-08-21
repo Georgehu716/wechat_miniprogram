@@ -1,15 +1,15 @@
 {
-  "pages":[
+  "pages": [
     "pages/self/self",
     "pages/index/index",
     "pages/store/store",
     "pages/logs/logs"
   ],
-  "window":{
+  "window": {
     "navigationStyle": "custom",
-    "backgroundTextStyle":"light",
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#D99F9F",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "color": "#8A8A8A",
@@ -34,5 +34,6 @@
         "selectedIconPath": "images/icon_self_fixed.png"
       }
     ]
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

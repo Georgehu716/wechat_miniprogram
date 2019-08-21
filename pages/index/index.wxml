@@ -29,8 +29,8 @@
           <view class="ItemDetail">{{tools.sub(item.Detail)}}</view>
           <view class="ItemCommentNum">评论 {{item.CommentNum}}</view>
           <view class="ItemDate">{{tools.date(item.Date,Timestamp)}}</view>
+          <view class="ItemGrade">{{item.Grade}}</view>
         </view>
-        <view class="ItemGrade">{{item.Grade}}</view>
       </view>
     </block>
   </view>
