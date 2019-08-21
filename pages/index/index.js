@@ -28,8 +28,7 @@ Page({
         Img: "img/article1.jpg",
         Grade: "9.2",
         Date: "1556006921",
-        CommentNum: "233",
-        Votes: "3365",
+        CommentNum: "233"
       },
       {
         Id: "2",
@@ -38,8 +37,7 @@ Page({
         Img: "img/article2.jpg",
         Grade: "7.8",
         Date: "1556002921",
-        CommentNum: "332",
-        Votes: "365",
+        CommentNum: "332"
       },
       {
         Id: "3",
@@ -48,8 +46,7 @@ Page({
         Img: "img/article3.jpg",
         Grade: "6.6",
         Date: "1555902921",
-        CommentNum: "322",
-        Votes: "335",
+        CommentNum: "322"
       },
       {
         Id: "4",
@@ -58,8 +55,7 @@ Page({
         Img: "img/article4.jpg",
         Grade: "8.4",
         Date: "1555702921",
-        CommentNum: "223",
-        Votes: "35",
+        CommentNum: "223"
       },
       {
         Id: "5",
@@ -68,8 +64,7 @@ Page({
         Img: "img/article4.jpg",
         Grade: "8.4",
         Date: "1545702921",
-        CommentNum: "223",
-        Votes: "3365",
+        CommentNum: "223"
       },
       {
         Id: "6",
@@ -78,8 +73,7 @@ Page({
         Img: "img/article4.jpg",
         Grade: "8.4",
         Date: "1555702921",
-        CommentNum: "223",
-        Votes: "336",
+        CommentNum: "223"
       },
       {
         Id: "7",
@@ -88,10 +82,47 @@ Page({
         Img: "img/article4.jpg",
         Grade: "8.4",
         Date: "1555702921",
-        CommentNum: "223",
-        Votes: "65",
+        CommentNum: "223"
       }
-    ]
+    ],
+    Votes: [
+      {
+        Id: "1",
+        Title: "投票物件1",
+        Detail: "投票详情",
+        Img: "img/article1.jpg",
+        Votenum: "123",
+        Date: "1556006921",
+        CommentNum: "23"
+      },
+      {
+        Id: "2",
+        Title: "投票物件2",
+        Detail: "投票详情2投票详情2投票详情2投票详情2投票详情2投票详情2投票详情2投票详情2投票详情2投票详情2投票详情2",
+        Img: "img/article1.jpg",
+        Votenum: "23",
+        Date: "1556016921",
+        CommentNum: "3"
+      },
+      {
+        Id: "3",
+        Title: "投票物件3",
+        Detail: "投票详情",
+        Img: "img/article1.jpg",
+        Votenum: "13",
+        Date: "1556006021",
+        CommentNum: "2"
+      },
+      {
+        Id: "4",
+        Title: "投票物件4",
+        Detail: "投票详情",
+        Img: "img/article1.jpg",
+        Votenum: "1123",
+        Date: "1554006921",
+        CommentNum: "123"
+      },
+    ],
   },
   //事件处理函数
   bindViewTap: function() {

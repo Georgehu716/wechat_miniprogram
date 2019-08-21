@@ -20,7 +20,7 @@
   </view>
 </view>
 <view class="body">
-  <view class="index">
+  <view class="{{IsIndex?'above':'below'}}">
     <block wx:for="{{Articles}}" wx:for-item="item" wx:key="index">
       <view class="items" style="background:{{colorArr[(Timestamp+item.Id*3)%5]}}">
         <image class="ItemImg" src="{{item.Img}}"></image>
@@ -34,19 +34,21 @@
       </view>
     </block>
   </view>
-  <!--
-  <view class="vote">
-    <block wx:for="{{Articles}}" wx:for-item="item" wx:key="index">
+  <view class="{IsIndex?'below':'above'}}">
+    <block wx:for="{{Votes}}" wx:for-item="item" wx:key="index">
       <view class="votes" style="background:{{colorArr[(Timestamp+item.Id*3)%5+5]}}">
-      <image class="VoteImg" src="{{item.Img}}"></image>
+        <image class="VoteImg" src="{{item.Img}}"></image>
         <view class="VoteWords">
           <view class="VoteTitle">{{item.Title}}</view>
-          <view class="ItemDetail">{{tools.sub(item.Detail)}}</view>
-          <view class="ItemCommentNum">评论 {{item.CommentNum}}</view>
-          <view class="ItemDate">{{tools.date(item.Date,Timestamp)}}</view>
+          <view class="VoteDetail">{{tools.sub(item.Detail)}}</view>
+          <view class="VoteCommentNum">评论 {{item.CommentNum}}</view>
+          <view class="VoteDate">{{tools.date(item.Date,Timestamp)}}</view>
+          <view class="VoteInfo">
+            <view class="VoteNum">{{item.Votenum}}</view>
+            <image class="VoteIcon" src="/images/vote.png"></image>
+          </view>
         </view>
       </view>
     </block>
   </view>
-  -->
 </view>

@@ -25,17 +25,17 @@
 .headbar_button {
   position: absolute;
   width: 265rpx;
-  height: 50rpx;
+  height: 54rpx;
   opacity: 1;
   box-shadow:0px 1px 1px 1px rgba(0,0,0,0.16);
   float: left;
   display: inline;
-  margin-top:22rpx; 
+  margin-top:20rpx; 
   background:rgba(239,240,240,0.99);
   color:#888;
   line-height:unset;
   border-radius:60rpx;  
-  font-size: 36rpx;
+  font-size: 35rpx;
 }
 .headbar_index {
   background:#EE8383;
@@ -78,6 +78,18 @@
 .body {
   position:absolute;
   top:250rpx;
+  width: 100%;
+}
+.above{
+  position: absolute;
+  top: 0rpx;
+  z-index: 2;
+}
+.below{
+  position: fixed;
+  top: 250rpx;
+  z-index: 1;
+  width: 100%;
 }
 .items {
   margin-left:16rpx;
@@ -85,6 +97,16 @@
   margin-right:16rpx;
   border-radius:0px 200rpx 200rpx 0px;
   height:200rpx;
+  width:90%;
+  box-shadow:0px 3px 6px 0px rgba(0,0,0,0.16);
+}
+.votes {
+  margin-left:16rpx;
+  margin-bottom:10rpx;
+  margin-right:16rpx;
+  border-radius:200rpx 0rpx 0rpx 200rpx;
+  height:200rpx;
+  float:right;
   width:90%;
   box-shadow:0px 3px 6px 0px rgba(0,0,0,0.16);
 }
@@ -96,18 +118,41 @@
   margin-top: 18rpx;
   border-radius: 15rpx;
 }
+.VoteImg {
+  height: 170rpx;
+  width: 170rpx;
+  z-index: 0;
+  margin-right: 16rpx;
+  margin-top: 18rpx;
+  border-radius: 15rpx;
+  float: right;
+}
 .ItemWords {
   margin-left:200rpx;
   transform:translateY(-180rpx);
   width:57.5%;
+}
+.VoteWords{
+  margin-left: 90rpx;
+  transform: translateY(18rpx);
+  width: 57.5%;
 }
 .ItemTitle {
   color:white;
   font-size:36rpx;
   line-height:40rpx;
 }
+.VoteTitle {
+  font-size:36rpx;
+  line-height:40rpx;
+}
 .ItemDetail {
   color:white;
+  font-size:22rpx;
+  position:fixed;
+  top:90rpx;
+}
+.VoteDetail {
   font-size:22rpx;
   position:fixed;
   top:90rpx;
@@ -126,6 +171,13 @@
   color:#736E6E;
   top:155rpx;
 }
+.VoteDate {
+  font-size:20rpx;
+  position:fixed;
+  left:65%;
+  color:#736E6E;
+  top:155rpx;
+}
 .ItemCommentNum {
   font-size:20rpx;
   position:fixed;
@@ -133,13 +185,24 @@
   color:#736E6E;
   top:155rpx;
 }
-.votes {
-  margin-left:16rpx;
-  margin-bottom:10rpx;
-  margin-right:16rpx;
-  border-radius:200px 0px 0px 200px;
-  height:200rpx;
-  width:90%;
-  box-shadow:0px 3px 6px 0px rgba(0,0,0,0.16);
-  z-index: -1;
+.VoteCommentNum {
+  font-size:20rpx;
+  position:fixed;
+  left:35%;
+  color:#736E6E;
+  top:155rpx;
+}
+.VoteInfo {
+  position: fixed;
+  left: -60rpx;
+}
+.VoteNum {
+  font-size: 30rpx;
+  transform: translateY(5rpx);
+  color: #8A8282;
+}
+.VoteIcon {
+  height: 50rpx;
+  width: 50rpx;
+  transform: translateY(-10rpx) translateX(-5rpx);
 }
