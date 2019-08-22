@@ -76,4 +76,10 @@
   </view>
 </view>
 <view class="inputbar">
+  <image class="alert" src="/images/alert.png"></image>
+  <view class="inputrange">
+    <image class="write" src="/images/write.png"></image>
+  </view>
+  <image class="favorite" src="/images/favorite1.png"></image>
+  <image class="share" src="/images/share.png"></image>
 </view>
