@@ -2,6 +2,7 @@
   "pages": [
     "pages/self/self",
     "pages/index/index",
+    "pages/index/xitang/xitang",
     "pages/store/store",
     "pages/logs/logs"
   ],

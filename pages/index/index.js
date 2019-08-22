@@ -183,5 +183,19 @@ Page({
     this.setData({
       OrderV: message.currentTarget.dataset.order
     });
+  },
+  MoveTo: function (message) {
+    var type = message.currentTarget.dataset.type;
+    var id = message.currentTarget.dataset.id;
+    var url = "";
+    if (type == 0) {
+      url = '/pages/index/xitang/xitang';
+    }
+    else if (type == 1){
+      url = '/pages/index/vote/vote';
+    }
+    wx.navigateTo({
+      url: url + '?id=' + id
+    })
   }
 })

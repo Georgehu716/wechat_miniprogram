@@ -1,6 +1,8 @@
 <!--index.wxml-->
 <wxs src="tools.wxs" module="tools" />
 <view class="headbar" style="background:{{IsIndex?'#D99F9F':'#D2E5E9'}};">
+  <image class="locimg" src="/images/locate.png"></image>
+  <text class="loctex">中国地质大学</text>
   <view class="headbar_white">
     <button class="headbar_button{{IsIndex?' headbar_index':''}}" style="left:24px;" bindtap="{{IsIndex?'':'IndexSwitch'}}">
       戏塘本塘
@@ -22,7 +24,7 @@
 <view class="body">
   <view class="{{IsIndex?'above':'below'}}">
     <block wx:for="{{Articles}}" wx:for-item="item" wx:key="index">
-      <view class="items" style="background:{{colorArr[(Timestamp+item.Id*3)%5]}}">
+      <view class="items" style="background:{{colorArr[(Timestamp+item.Id*3)%5]}}" bindtap="MoveTo" data-type="0" data-id="{{item.Id}}">
         <image class="ItemImg" src="{{item.Img}}"></image>
         <view class="ItemWords">
           <view class="ItemTitle">{{item.Title}}</view>
@@ -36,7 +38,7 @@
   </view>
   <view class="{IsIndex?'below':'above'}}">
     <block wx:for="{{Votes}}" wx:for-item="item" wx:key="index">
-      <view class="votes" style="background:{{colorArr[(Timestamp+item.Id*3)%5+5]}}">
+      <view class="votes" style="background:{{colorArr[(Timestamp+item.Id*3)%5+5]}}" bindtap="MoveTo" data-type="1" data-id="{{item.Id}}">
         <image class="VoteImg" src="{{item.Img}}"></image>
         <view class="VoteWords">
           <view class="VoteTitle">{{item.Title}}</view>

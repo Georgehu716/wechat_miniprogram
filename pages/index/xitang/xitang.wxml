@@ -1,0 +1,79 @@
+<!--pages/index/xitang/xitang.wxml-->
+<view class="headbar">
+  <image class="back" src="/images/back.png" bindtap="Back"></image>
+  <text class="headword">戏塘</text>
+</view>
+<view class="body">
+  <image class="locimg" src="/images/locate.png"></image>
+  <text class="loctex">中国地质大学\n</text>
+  <text class="title">我是标题我是标题我是标题我是标题我是标题我是标题我是标题</text>
+  <view class='line'></view>
+  <view class="photorange">
+    <view class="photos">
+      <image class="photo" src="img/xitang1.jpg"></image>
+      <image class="photo" src="img/xitang1.jpg"></image>
+      <image class="photo" src="img/xitang1.jpg"></image>
+      <image class="photo" src="img/xitang1.jpg"></image>
+    </view>
+  </view>
+  <view class="gradeinfo">
+    <view class="gradeline"></view>
+    <view class="grade">9.6分</view>
+  </view>
+  <text class="content">
+    我是文章的内容，我是文章的内容。我是文章的内容我是文章的内容我是文章的内容我是文章的内容我是文章的内容我是文章的内容我是文章的内容我是文章的内容我是文章的内容。
+
+    我是文章的内容我是文章的内容我是文章的内容我是文章的内容我是文章的内容我是文章的内容我是文章的内容我是文章的内容。
+  </text>
+  <view class="line" style="top:-20rpx;"></view>
+  <view class="comments">
+    <view class="comment">
+      <view class="commenthead">
+        <image class="avatar" src="img/xitang1.jpg"></image>
+        <text class="username">评论者</text>
+        <view class="stars">
+          <image class="star" src="/images/star1.png"></image>
+          <image class="star" src="/images/star1.png"></image>
+          <image class="star" src="/images/star1.png"></image>
+          <image class="star" src="/images/star1.png"></image>
+          <image class="star" src="/images/star1.png"></image>
+        </view>
+        <view class="goodbad">
+            <image class="goodpic" src="/images/good1.png"></image>
+            <text class="goodnum">223</text>
+            <image class="badpic" src="/images/bad1.png"></image>
+            <text class="badnum">23</text>
+        </view>
+      </view>
+      <view class="commentword">
+        我是评论内容我是评论内容我是评论内容我是评论内容我是评论内容我是评论内容我是评论内容
+      </view>
+      <text class="commenttime">2小时前</text>
+    </view>
+    <view class="comment">
+      <view class="commenthead">
+        <image class="avatar" src="img/xitang1.jpg"></image>
+        <text class="username">评论者</text>
+        <view class="stars">
+          <image class="star" src="/images/star1.png"></image>
+          <image class="star" src="/images/star1.png"></image>
+          <image class="star" src="/images/star1.png"></image>
+          <image class="star" src="/images/star1.png"></image>
+          <image class="star" src="/images/star1.png"></image>
+        </view>
+        <view class="goodbad">
+            <image class="goodpic" src="/images/good1.png"></image>
+            <text class="goodnum">223</text>
+            <image class="badpic" src="/images/bad1.png"></image>
+            <text class="badnum">23</text>
+        </view>
+      </view>
+      <view class="commentword">
+        我是评论内容我是评论内容我是评论内容我是评论内容我是评论内容我是评论内容我是评论内容
+      </view>
+      <text class="commenttime">2小时前</text>
+    </view>
+  </view>
+</view>
+<view class="inputbar">
+</view>
